@@ -1,0 +1,573 @@
+{
+  "account_id": "669719022745",
+  "profile_name": "Audit-Admin",
+  "scan_time": "2025-07-07T16:17:20.196248",
+  "regions": {
+    "us-east-1": {
+      "scan_time": "2025-07-07T16:17:21.150904",
+      "resources": {
+        "s3_buckets": {
+          "count": 3,
+          "resources": [
+            {
+              "Name": "audit-manager-evidence-669719022745-us-east-2",
+              "CreationDate": "2025-07-02T22:29:37+00:00"
+            },
+            {
+              "Name": "cdk-hnb659fds-assets-669719022745-us-east-2",
+              "CreationDate": "2025-06-29T17:56:52+00:00"
+            },
+            {
+              "Name": "cdk-hnb659fds-assets-669719022745-us-west-2",
+              "CreationDate": "2025-06-29T17:57:46+00:00"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 3,
+        "to_preserve": 0,
+        "to_delete": 3
+      }
+    },
+    "us-east-2": {
+      "scan_time": "2025-07-07T16:17:21.151458",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "669719022745",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-0d63b402755e925e8",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-0ccda390fdeb8ca38",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-0f92fbd54bdb71f5d"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-0c5bcca755912bf0c",
+              "GroupName": "default"
+            }
+          ]
+        },
+        "lambda_functions": {
+          "count": 2,
+          "resources": [
+            {
+              "FunctionName": "DefaultSGRemediation-us-east-2",
+              "Runtime": "python3.11"
+            },
+            {
+              "FunctionName": "aws-controltower-NotificationForwarder",
+              "Runtime": "python3.13"
+            }
+          ]
+        },
+        "cloudformation_stacks": {
+          "count": 11,
+          "control_tower_stacks": 8,
+          "resources": [
+            {
+              "StackName": "StackSet-DefaultSGRemediationSimple-17aab661-03ce-4d84-99e6-fc0c01736679",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-60fd3e6b-4196-4e7b-b1a6-15d4d33b5c85",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-acae490b-1486-4f85-8c21-e71c4ac3af09",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-SERVICE-LINKED-ROLE-6504fe17-e6f5-48ff-b13b-26a311a88c61",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "StackSet-AWSControlTowerBP-SECURITY-TOPICS-4e1455c1-19b8-4cec-bd5c-5141a31269d7",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-SERVICE-ROLES-6a89466c-e758-4a4f-806a-93ba713c4fcc",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-ROLES-9a429512-226b-4ccf-a4d3-434769122c08",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "StackSet-AWSControlTowerSecurityResources-5d854118-dd44-4487-881d-a2017ba2e6ff",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "StackSet-AWSControlTowerExecutionRole-177c0870-527a-4e24-9820-456571c5dc0f",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "CrossAccountRoles-Audit",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "CDKToolkit",
+              "Status": "CREATE_COMPLETE"
+            }
+          ],
+          "to_preserve": [
+            {
+              "StackId": "arn:aws:cloudformation:us-east-2:669719022745:stack/StackSet-AWSControlTowerBP-BASELINE-CONFIG-60fd3e6b-4196-4e7b-b1a6-15d4d33b5c85/ea869830-5768-11f0-a4a8-06a31499a80f",
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-60fd3e6b-4196-4e7b-b1a6-15d4d33b5c85",
+              "TemplateDescription": "Configure AWS Config",
+              "CreationTime": "2025-07-02 17:20:57.213000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            },
+            {
+              "StackId": "arn:aws:cloudformation:us-east-2:669719022745:stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-acae490b-1486-4f85-8c21-e71c4ac3af09/ea694c30-5768-11f0-8b90-022660d803db",
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-acae490b-1486-4f85-8c21-e71c4ac3af09",
+              "TemplateDescription": "Configure Cloudwatch Rule, local SNS Topic, forwarding notifications from local SNS Topic to Security Topic",
+              "CreationTime": "2025-07-02 17:20:57.020000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            },
+            {
+              "StackId": "arn:aws:cloudformation:us-east-2:669719022745:stack/StackSet-AWSControlTowerBP-BASELINE-SERVICE-LINKED-ROLE-6504fe17-e6f5-48ff-b13b-26a311a88c61/b45e2750-5768-11f0-b2ba-02f3389594f3",
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-SERVICE-LINKED-ROLE-6504fe17-e6f5-48ff-b13b-26a311a88c61",
+              "TemplateDescription": "Configure Control Tower Service Linked Role",
+              "CreationTime": "2025-07-02 17:19:26.334000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            },
+            {
+              "StackId": "arn:aws:cloudformation:us-east-2:669719022745:stack/StackSet-AWSControlTowerBP-SECURITY-TOPICS-4e1455c1-19b8-4cec-bd5c-5141a31269d7/b3ef5ff0-5768-11f0-80d3-0afac967e9eb",
+              "StackName": "StackSet-AWSControlTowerBP-SECURITY-TOPICS-4e1455c1-19b8-4cec-bd5c-5141a31269d7",
+              "TemplateDescription": "Configure the SNS Topics for Security Account",
+              "CreationTime": "2025-07-02 17:19:25.630000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            },
+            {
+              "StackId": "arn:aws:cloudformation:us-east-2:669719022745:stack/StackSet-AWSControlTowerBP-BASELINE-SERVICE-ROLES-6a89466c-e758-4a4f-806a-93ba713c4fcc/b3d659b0-5768-11f0-9364-0295f18c8acb",
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-SERVICE-ROLES-6a89466c-e758-4a4f-806a-93ba713c4fcc",
+              "TemplateDescription": "Configure AWS Config and SNS Notification Forward IAM Roles",
+              "CreationTime": "2025-07-02 17:19:25.447000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            },
+            {
+              "StackId": "arn:aws:cloudformation:us-east-2:669719022745:stack/StackSet-AWSControlTowerBP-BASELINE-ROLES-9a429512-226b-4ccf-a4d3-434769122c08/b240eca0-5768-11f0-974c-06f4809fb4cd",
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-ROLES-9a429512-226b-4ccf-a4d3-434769122c08",
+              "TemplateDescription": "Configure the Cross-Account IAM Security Roles for the member accounts.",
+              "CreationTime": "2025-07-02 17:19:22.809000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            },
+            {
+              "StackId": "arn:aws:cloudformation:us-east-2:669719022745:stack/StackSet-AWSControlTowerSecurityResources-5d854118-dd44-4487-881d-a2017ba2e6ff/7c4446b0-5768-11f0-a487-02bc7f67e419",
+              "StackName": "StackSet-AWSControlTowerSecurityResources-5d854118-dd44-4487-881d-a2017ba2e6ff",
+              "TemplateDescription": "Configure the Cross-Account IAM Audit Roles for Audit Account",
+              "CreationTime": "2025-07-02 17:17:52.226000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            },
+            {
+              "StackId": "arn:aws:cloudformation:us-east-2:669719022745:stack/StackSet-AWSControlTowerExecutionRole-177c0870-527a-4e24-9820-456571c5dc0f/05f409a0-5768-11f0-84a4-063957d313cf",
+              "StackName": "StackSet-AWSControlTowerExecutionRole-177c0870-527a-4e24-9820-456571c5dc0f",
+              "TemplateDescription": "Configure the Execution Role for Control Tower",
+              "CreationTime": "2025-07-02 17:14:33.745000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 15,
+        "to_preserve": 8,
+        "to_delete": 7
+      }
+    },
+    "us-west-2": {
+      "scan_time": "2025-07-07T16:17:21.151975",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "669719022745",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-00524d34f12693e73",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-096e4fff736bde5c8",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-0b0ad5835145ba060"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-088f042fa50f7c421",
+              "GroupName": "default"
+            }
+          ]
+        },
+        "lambda_functions": {
+          "count": 2,
+          "resources": [
+            {
+              "FunctionName": "DefaultSGRemediation-us-west-2",
+              "Runtime": "python3.11"
+            },
+            {
+              "FunctionName": "aws-controltower-NotificationForwarder",
+              "Runtime": "python3.13"
+            }
+          ]
+        },
+        "cloudformation_stacks": {
+          "count": 5,
+          "control_tower_stacks": 3,
+          "resources": [
+            {
+              "StackName": "StackSet-DefaultSGRemediationSimple-5ee8c5fc-f0bc-4b5f-9f94-0b96259b9418",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-74259bfb-d3da-4a18-852b-e0163ce51f04",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-c102459f-f112-4941-ad7a-a493bc222d93",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "StackSet-AWSControlTowerBP-SECURITY-TOPICS-41245c18-24d8-4c4f-8d6d-ae220fbe882a",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "CDKToolkit",
+              "Status": "CREATE_COMPLETE"
+            }
+          ],
+          "to_preserve": [
+            {
+              "StackId": "arn:aws:cloudformation:us-west-2:669719022745:stack/StackSet-AWSControlTowerBP-BASELINE-CONFIG-74259bfb-d3da-4a18-852b-e0163ce51f04/eacc53c0-5768-11f0-ba03-064e85db086d",
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-74259bfb-d3da-4a18-852b-e0163ce51f04",
+              "TemplateDescription": "Configure AWS Config",
+              "CreationTime": "2025-07-02 17:20:57.701000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            },
+            {
+              "StackId": "arn:aws:cloudformation:us-west-2:669719022745:stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-c102459f-f112-4941-ad7a-a493bc222d93/ea9c9130-5768-11f0-a418-06ed73ba35e3",
+              "StackName": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-c102459f-f112-4941-ad7a-a493bc222d93",
+              "TemplateDescription": "Configure Cloudwatch Rule, local SNS Topic, forwarding notifications from local SNS Topic to Security Topic",
+              "CreationTime": "2025-07-02 17:20:57.376000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            },
+            {
+              "StackId": "arn:aws:cloudformation:us-west-2:669719022745:stack/StackSet-AWSControlTowerBP-SECURITY-TOPICS-41245c18-24d8-4c4f-8d6d-ae220fbe882a/b42786f0-5768-11f0-928b-021d0713555d",
+              "StackName": "StackSet-AWSControlTowerBP-SECURITY-TOPICS-41245c18-24d8-4c4f-8d6d-ae220fbe882a",
+              "TemplateDescription": "Configure the SNS Topics for Security Account",
+              "CreationTime": "2025-07-02 17:19:26.033000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 9,
+        "to_preserve": 3,
+        "to_delete": 6
+      }
+    }
+  },
+  "global_resources": {
+    "iam_roles": {
+      "count": 48,
+      "preserve": true,
+      "resources": [
+        {
+          "RoleName": "aws-controltower-AdministratorExecutionRole",
+          "Arn": "arn:aws:iam::669719022745:role/aws-controltower-AdministratorExecutionRole"
+        },
+        {
+          "RoleName": "aws-controltower-AuditAdministratorRole",
+          "Arn": "arn:aws:iam::669719022745:role/aws-controltower-AuditAdministratorRole"
+        },
+        {
+          "RoleName": "aws-controltower-AuditReadOnlyRole",
+          "Arn": "arn:aws:iam::669719022745:role/aws-controltower-AuditReadOnlyRole"
+        },
+        {
+          "RoleName": "aws-controltower-ConfigRecorderRole",
+          "Arn": "arn:aws:iam::669719022745:role/aws-controltower-ConfigRecorderRole"
+        },
+        {
+          "RoleName": "aws-controltower-ForwardSnsNotificationRole",
+          "Arn": "arn:aws:iam::669719022745:role/aws-controltower-ForwardSnsNotificationRole"
+        },
+        {
+          "RoleName": "aws-controltower-ReadOnlyExecutionRole",
+          "Arn": "arn:aws:iam::669719022745:role/aws-controltower-ReadOnlyExecutionRole"
+        },
+        {
+          "RoleName": "AWSBackupDefaultServiceRole",
+          "Arn": "arn:aws:iam::669719022745:role/AWSBackupDefaultServiceRole"
+        },
+        {
+          "RoleName": "AWSControlTowerExecution",
+          "Arn": "arn:aws:iam::669719022745:role/AWSControlTowerExecution"
+        },
+        {
+          "RoleName": "AWSReservedSSO_AdministratorAccess_0113eeece0aad590",
+          "Arn": "arn:aws:iam::669719022745:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_AdministratorAccess_0113eeece0aad590"
+        },
+        {
+          "RoleName": "AWSReservedSSO_AWSAdministratorAccess_718154985200c876",
+          "Arn": "arn:aws:iam::669719022745:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_AWSAdministratorAccess_718154985200c876"
+        },
+        {
+          "RoleName": "AWSReservedSSO_AWSPowerUserAccess_cb861aad56c7f90a",
+          "Arn": "arn:aws:iam::669719022745:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_AWSPowerUserAccess_cb861aad56c7f90a"
+        },
+        {
+          "RoleName": "AWSReservedSSO_AWSReadOnlyAccess_ac70bb2422f5cb8b",
+          "Arn": "arn:aws:iam::669719022745:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_AWSReadOnlyAccess_ac70bb2422f5cb8b"
+        },
+        {
+          "RoleName": "AWSReservedSSO_ComplianceReviewer_7d52e11d723d080f",
+          "Arn": "arn:aws:iam::669719022745:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_ComplianceReviewer_7d52e11d723d080f"
+        },
+        {
+          "RoleName": "AWSReservedSSO_SecurityAuditor_ce1c8f68e8d959cd",
+          "Arn": "arn:aws:iam::669719022745:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_SecurityAuditor_ce1c8f68e8d959cd"
+        },
+        {
+          "RoleName": "AWSServiceRoleForAccessAnalyzer",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/access-analyzer.amazonaws.com/AWSServiceRoleForAccessAnalyzer"
+        },
+        {
+          "RoleName": "AWSServiceRoleForAmazonGuardDuty",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty"
+        },
+        {
+          "RoleName": "AWSServiceRoleForAmazonGuardDutyMalwareProtection",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/malware-protection.guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDutyMalwareProtection"
+        },
+        {
+          "RoleName": "AWSServiceRoleForAWSControlTower",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/controltower.amazonaws.com/AWSServiceRoleForAWSControlTower"
+        },
+        {
+          "RoleName": "AWSServiceRoleForBackup",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/backup.amazonaws.com/AWSServiceRoleForBackup"
+        },
+        {
+          "RoleName": "AWSServiceRoleForCloudFormationStackSetsOrgMember",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/member.org.stacksets.cloudformation.amazonaws.com/AWSServiceRoleForCloudFormationStackSetsOrgMember"
+        },
+        {
+          "RoleName": "AWSServiceRoleForCloudTrail",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/cloudtrail.amazonaws.com/AWSServiceRoleForCloudTrail"
+        },
+        {
+          "RoleName": "AWSServiceRoleForConfig",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig"
+        },
+        {
+          "RoleName": "AWSServiceRoleForConfigMultiAccountSetup",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/config-multiaccountsetup.amazonaws.com/AWSServiceRoleForConfigMultiAccountSetup"
+        },
+        {
+          "RoleName": "AWSServiceRoleForCostOptimizationHub",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/cost-optimization-hub.bcm.amazonaws.com/AWSServiceRoleForCostOptimizationHub"
+        },
+        {
+          "RoleName": "AWSServiceRoleForOrganizations",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations"
+        },
+        {
+          "RoleName": "AWSServiceRoleForSecurityHub",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/securityhub.amazonaws.com/AWSServiceRoleForSecurityHub"
+        },
+        {
+          "RoleName": "AWSServiceRoleForSSO",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO"
+        },
+        {
+          "RoleName": "AWSServiceRoleForSupport",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport"
+        },
+        {
+          "RoleName": "AWSServiceRoleForTrustedAdvisor",
+          "Arn": "arn:aws:iam::669719022745:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-cfn-exec-role-669719022745-us-east-2",
+          "Arn": "arn:aws:iam::669719022745:role/cdk-hnb659fds-cfn-exec-role-669719022745-us-east-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-cfn-exec-role-669719022745-us-west-2",
+          "Arn": "arn:aws:iam::669719022745:role/cdk-hnb659fds-cfn-exec-role-669719022745-us-west-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-deploy-role-669719022745-us-east-2",
+          "Arn": "arn:aws:iam::669719022745:role/cdk-hnb659fds-deploy-role-669719022745-us-east-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-deploy-role-669719022745-us-west-2",
+          "Arn": "arn:aws:iam::669719022745:role/cdk-hnb659fds-deploy-role-669719022745-us-west-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-file-publishing-role-669719022745-us-east-2",
+          "Arn": "arn:aws:iam::669719022745:role/cdk-hnb659fds-file-publishing-role-669719022745-us-east-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-file-publishing-role-669719022745-us-west-2",
+          "Arn": "arn:aws:iam::669719022745:role/cdk-hnb659fds-file-publishing-role-669719022745-us-west-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-image-publishing-role-669719022745-us-east-2",
+          "Arn": "arn:aws:iam::669719022745:role/cdk-hnb659fds-image-publishing-role-669719022745-us-east-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-image-publishing-role-669719022745-us-west-2",
+          "Arn": "arn:aws:iam::669719022745:role/cdk-hnb659fds-image-publishing-role-669719022745-us-west-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-lookup-role-669719022745-us-east-2",
+          "Arn": "arn:aws:iam::669719022745:role/cdk-hnb659fds-lookup-role-669719022745-us-east-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-lookup-role-669719022745-us-west-2",
+          "Arn": "arn:aws:iam::669719022745:role/cdk-hnb659fds-lookup-role-669719022745-us-west-2"
+        },
+        {
+          "RoleName": "CrossAccountDeploymentRole",
+          "Arn": "arn:aws:iam::669719022745:role/CrossAccountDeploymentRole"
+        },
+        {
+          "RoleName": "DefaultSGRemediationLambdaRole",
+          "Arn": "arn:aws:iam::669719022745:role/DefaultSGRemediationLambdaRole"
+        },
+        {
+          "RoleName": "DefaultSGRemediationRole-us-east-2",
+          "Arn": "arn:aws:iam::669719022745:role/DefaultSGRemediationRole-us-east-2"
+        },
+        {
+          "RoleName": "DefaultSGRemediationRole-us-west-2",
+          "Arn": "arn:aws:iam::669719022745:role/DefaultSGRemediationRole-us-west-2"
+        },
+        {
+          "RoleName": "flowlogsRole",
+          "Arn": "arn:aws:iam::669719022745:role/flowlogsRole"
+        },
+        {
+          "RoleName": "GitHubActionsDeploymentRole",
+          "Arn": "arn:aws:iam::669719022745:role/GitHubActionsDeploymentRole"
+        },
+        {
+          "RoleName": "GitHubActionsReadOnlyRole",
+          "Arn": "arn:aws:iam::669719022745:role/GitHubActionsReadOnlyRole"
+        },
+        {
+          "RoleName": "OrganizationAccountAccessRole",
+          "Arn": "arn:aws:iam::669719022745:role/OrganizationAccountAccessRole"
+        },
+        {
+          "RoleName": "stacksets-exec-f74a25b41f31e1550412cf113e2deb66",
+          "Arn": "arn:aws:iam::669719022745:role/stacksets-exec-f74a25b41f31e1550412cf113e2deb66"
+        }
+      ]
+    },
+    "iam_users": {
+      "count": 0,
+      "preserve": true,
+      "resources": []
+    },
+    "iam_policies": {
+      "count": 0,
+      "preserve": true,
+      "resources": []
+    }
+  },
+  "summary": {
+    "total_resources": 75,
+    "resources_to_preserve": 59,
+    "resources_to_delete": 16,
+    "by_service": {},
+    "by_region": {
+      "us-east-1": {
+        "total": 3,
+        "to_preserve": 0,
+        "to_delete": 3
+      },
+      "us-east-2": {
+        "total": 15,
+        "to_preserve": 8,
+        "to_delete": 7
+      },
+      "us-west-2": {
+        "total": 9,
+        "to_preserve": 3,
+        "to_delete": 6
+      }
+    }
+  }
+}

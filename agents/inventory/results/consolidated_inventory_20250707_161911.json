@@ -1,0 +1,72 @@
+{
+  "scan_completed": "2025-07-07T16:19:11.051572",
+  "accounts_scanned": 9,
+  "total_resources_found": 809,
+  "total_to_preserve": 581,
+  "total_to_delete": 228,
+  "accounts": {
+    "Management-Admin": {
+      "account_id": "490224159991",
+      "total_resources": 154,
+      "to_preserve": 98,
+      "to_delete": 56,
+      "inventory_file": "/Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/inventory/results/inventory_490224159991_20250707_161701.json"
+    },
+    "LogArchive-Admin": {
+      "account_id": "843987575791",
+      "total_resources": 72,
+      "to_preserve": 54,
+      "to_delete": 18,
+      "inventory_file": "/Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/inventory/results/inventory_843987575791_20250707_161717.json"
+    },
+    "Audit-Admin": {
+      "account_id": "669719022745",
+      "total_resources": 75,
+      "to_preserve": 59,
+      "to_delete": 16,
+      "inventory_file": "/Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/inventory/results/inventory_669719022745_20250707_161734.json"
+    },
+    "Network-Admin": {
+      "account_id": "009595167441",
+      "total_resources": 69,
+      "to_preserve": 54,
+      "to_delete": 15,
+      "inventory_file": "/Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/inventory/results/inventory_009595167441_20250707_161750.json"
+    },
+    "SharedServices-Admin": {
+      "account_id": "085608568402",
+      "total_resources": 70,
+      "to_preserve": 55,
+      "to_delete": 15,
+      "inventory_file": "/Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/inventory/results/inventory_085608568402_20250707_161806.json"
+    },
+    "Development-Admin": {
+      "account_id": "134388504287",
+      "total_resources": 115,
+      "to_preserve": 77,
+      "to_delete": 38,
+      "inventory_file": "/Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/inventory/results/inventory_134388504287_20250707_161823.json"
+    },
+    "Staging-Admin": {
+      "account_id": "241947254664",
+      "total_resources": 101,
+      "to_preserve": 69,
+      "to_delete": 32,
+      "inventory_file": "/Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/inventory/results/inventory_241947254664_20250707_161839.json"
+    },
+    "Production-Admin": {
+      "account_id": "739089951972",
+      "total_resources": 88,
+      "to_preserve": 64,
+      "to_delete": 24,
+      "inventory_file": "/Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/inventory/results/inventory_739089951972_20250707_161854.json"
+    },
+    "JWModulairHR-Admin": {
+      "account_id": "744139898690",
+      "total_resources": 65,
+      "to_preserve": 51,
+      "to_delete": 14,
+      "inventory_file": "/Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/inventory/results/inventory_744139898690_20250707_161911.json"
+    }
+  }
+}

@@ -1,0 +1,1460 @@
+{
+  "account_id": "490224159991",
+  "profile_name": "Management-Admin",
+  "scan_time": "2025-07-07T16:16:37.425996",
+  "regions": {
+    "us-east-2": {
+      "scan_time": "2025-07-07T16:16:42.337172",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-09837349c6585861e",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-00caddab15afca2a0",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-0f929a77ac1bb9eff"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 3,
+          "resources": [
+            {
+              "GroupId": "sg-0ddc8ff1b59c630b6",
+              "GroupName": "poc-alb-sg"
+            },
+            {
+              "GroupId": "sg-0d550b6574e3a5f52",
+              "GroupName": "default"
+            },
+            {
+              "GroupId": "sg-013a6570fa0acb184",
+              "GroupName": "poc-api-fargate-sg"
+            }
+          ]
+        },
+        "cloudformation_stacks": {
+          "count": 5,
+          "control_tower_stacks": 2,
+          "resources": [
+            {
+              "StackName": "SecurityHub-Management",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "AWSControlTowerBP-BASELINE-CONFIG-MASTER",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "AWSControlTowerBP-BASELINE-CLOUDTRAIL-MASTER",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "SaaSPlatform-Foundation-dev",
+              "Status": "CREATE_COMPLETE"
+            },
+            {
+              "StackName": "CDKToolkit",
+              "Status": "CREATE_COMPLETE"
+            }
+          ],
+          "to_preserve": [
+            {
+              "StackId": "arn:aws:cloudformation:us-east-2:490224159991:stack/AWSControlTowerBP-BASELINE-CONFIG-MASTER/e85b2cb0-5768-11f0-808a-068b2d7a2ef9",
+              "StackName": "AWSControlTowerBP-BASELINE-CONFIG-MASTER",
+              "TemplateDescription": "Template that creates an Org-level AWS Config Aggregator to collect config rules information",
+              "CreationTime": "2025-07-02 17:20:53.591000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            },
+            {
+              "StackId": "arn:aws:cloudformation:us-east-2:490224159991:stack/AWSControlTowerBP-BASELINE-CLOUDTRAIL-MASTER/e845f700-5768-11f0-8ccb-0212176350c9",
+              "StackName": "AWSControlTowerBP-BASELINE-CLOUDTRAIL-MASTER",
+              "TemplateDescription": "Configure AWS CloudTrail",
+              "CreationTime": "2025-07-02 17:20:53.472000+00:00",
+              "StackStatus": "CREATE_COMPLETE",
+              "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 9,
+        "to_preserve": 2,
+        "to_delete": 7
+      }
+    },
+    "us-west-2": {
+      "scan_time": "2025-07-07T16:16:42.338039",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-0146692e1be19debd",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-0182232b3a50ea624",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-08a78ab401f1df119"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-0c9baab957a9920de",
+              "GroupName": "default"
+            }
+          ]
+        },
+        "cloudformation_stacks": {
+          "count": 1,
+          "control_tower_stacks": 0,
+          "resources": [
+            {
+              "StackName": "CDKToolkit",
+              "Status": "CREATE_COMPLETE"
+            }
+          ],
+          "to_preserve": []
+        }
+      },
+      "summary": {
+        "total": 3,
+        "to_preserve": 0,
+        "to_delete": 3
+      }
+    },
+    "us-east-1": {
+      "scan_time": "2025-07-07T16:16:42.337491",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-0d4faa143a8c08a2b",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-0c86e353d566245d0",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-04e84733ad7de8042"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 2,
+          "resources": [
+            {
+              "GroupId": "sg-0e1946a9e8380ba94",
+              "GroupName": "default"
+            },
+            {
+              "GroupId": "sg-0ecdc30ea06cd4199",
+              "GroupName": "vpc-endpoints-sg"
+            }
+          ]
+        },
+        "s3_buckets": {
+          "count": 17,
+          "resources": [
+            {
+              "Name": "aws-config-bucket-490224159991-ap-southeast-1",
+              "CreationDate": "2025-07-07T15:31:22+00:00"
+            },
+            {
+              "Name": "aws-config-bucket-490224159991-ap-southeast-2",
+              "CreationDate": "2025-07-07T15:31:55+00:00"
+            },
+            {
+              "Name": "aws-config-bucket-490224159991-eu-central-1",
+              "CreationDate": "2025-07-07T15:30:46+00:00"
+            },
+            {
+              "Name": "aws-config-bucket-490224159991-eu-west-1",
+              "CreationDate": "2025-07-07T15:29:44+00:00"
+            },
+            {
+              "Name": "aws-config-bucket-490224159991-eu-west-2",
+              "CreationDate": "2025-07-07T15:30:08+00:00"
+            },
+            {
+              "Name": "aws-config-bucket-490224159991-us-east-1",
+              "CreationDate": "2025-07-07T15:27:05+00:00"
+            },
+            {
+              "Name": "aws-config-bucket-490224159991-us-east-2",
+              "CreationDate": "2025-07-07T15:27:39+00:00"
+            },
+            {
+              "Name": "aws-config-bucket-490224159991-us-west-1",
+              "CreationDate": "2025-07-07T15:28:14+00:00"
+            },
+            {
+              "Name": "aws-config-bucket-490224159991-us-west-2",
+              "CreationDate": "2025-07-07T15:29:12+00:00"
+            },
+            {
+              "Name": "aws-config-management-490224159991-us-east-1",
+              "CreationDate": "2025-07-07T01:37:58+00:00"
+            },
+            {
+              "Name": "aws-config-management-490224159991-us-east-2",
+              "CreationDate": "2025-07-03T16:06:43+00:00"
+            },
+            {
+              "Name": "aws-config-management-490224159991-us-west-2",
+              "CreationDate": "2025-07-07T13:30:19+00:00"
+            },
+            {
+              "Name": "cdk-hnb659fds-assets-490224159991-us-east-2",
+              "CreationDate": "2025-06-29T17:18:50+00:00"
+            },
+            {
+              "Name": "cdk-hnb659fds-assets-490224159991-us-west-2",
+              "CreationDate": "2025-07-03T02:00:57+00:00"
+            },
+            {
+              "Name": "dev-tenant-exports-490224159991",
+              "CreationDate": "2025-07-07T01:38:06+00:00"
+            },
+            {
+              "Name": "s3-access-logs-490224159991-us-east-1",
+              "CreationDate": "2025-07-07T01:37:43+00:00"
+            },
+            {
+              "Name": "vpc-flow-logs-490224159991-us-east-1",
+              "CreationDate": "2025-07-07T01:38:07+00:00"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 20,
+        "to_preserve": 0,
+        "to_delete": 20
+      }
+    },
+    "us-west-1": {
+      "scan_time": "2025-07-07T16:16:42.337771",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-0492ab4037fdca249",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-003f115c1418c4181",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-084d6d8348ae277e8"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-0f46bb198282db869",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    },
+    "eu-west-1": {
+      "scan_time": "2025-07-07T16:16:42.338310",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-079ed51c94dd0f135",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-02f257268741bc885",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-0a05cef69ab73e8ac"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-0c9893b68add276e5",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    },
+    "eu-west-2": {
+      "scan_time": "2025-07-07T16:16:44.847357",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-0d132eefb8558b95a",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-0a320b964ba788a9f",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-08c47242b916b7e60"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-0dc7164d0912c7202",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    },
+    "eu-west-3": {
+      "scan_time": "2025-07-07T16:16:44.993672",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-00ade8ae500e0ee53",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-0e5e083c6536f902b",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-033a962bd15c9d7b0"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-0aec806df7112a41b",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    },
+    "eu-central-1": {
+      "scan_time": "2025-07-07T16:16:45.228509",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-0c00eb10da98e2d24",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-0000023279501ea80",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-00fb6c060fdaecf24"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-0866da7cdd48c2b11",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    },
+    "ap-southeast-1": {
+      "scan_time": "2025-07-07T16:16:45.273673",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-0ac9663f10d4bcf17",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-0e3fff8e70d539b46",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-0d56d28278ac7dec7"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-0fb3bad0fa2a9ce01",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    },
+    "ap-southeast-2": {
+      "scan_time": "2025-07-07T16:16:46.179862",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-04c25eab7d4bb8ee4",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-05ba8958b7f9c5d0d",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-0fb9862d39d70df67"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-01172cacde5236850",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    },
+    "ap-northeast-1": {
+      "scan_time": "2025-07-07T16:16:48.686877",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-0d8b1d41aa9b6fbbe",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-0e948522f00c9f3e9",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-0180173a6080fb5f7"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-095df89c47276d127",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    },
+    "ca-central-1": {
+      "scan_time": "2025-07-07T16:16:51.406666",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-072aa551bc13af5e7",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-0bff5c71d950d148f",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-0bba5a19cd383ba8d"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-09b285f7f8ca8c54e",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    },
+    "ap-northeast-2": {
+      "scan_time": "2025-07-07T16:16:48.838190",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-062ced63967aa8e44",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-0e47ff2d6cc1f865f",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-096b047da3a8ef820"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-0627c840465fc8402",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    },
+    "ap-south-1": {
+      "scan_time": "2025-07-07T16:16:49.427148",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-0571d4e1d07e921e8",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-0f277d6e88b6c31f8",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-038831b1192b00683"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-0e8cb705d4e637482",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    },
+    "sa-east-1": {
+      "scan_time": "2025-07-07T16:16:51.437903",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-0149818f0dab57e25",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-0dbe983beec08bd98",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-0a17fabf83aa29677"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-0bbb024c080051fb6",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    },
+    "eu-north-1": {
+      "scan_time": "2025-07-07T16:16:53.211880",
+      "resources": {
+        "vpcs": {
+          "count": 1,
+          "resources": [
+            {
+              "OwnerId": "490224159991",
+              "InstanceTenancy": "default",
+              "CidrBlockAssociationSet": [
+                {
+                  "AssociationId": "vpc-cidr-assoc-04f287fbf0a63e206",
+                  "CidrBlock": "172.31.0.0/16",
+                  "CidrBlockState": {
+                    "State": "associated"
+                  }
+                }
+              ],
+              "IsDefault": true,
+              "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+              },
+              "VpcId": "vpc-04b8497557791579e",
+              "State": "available",
+              "CidrBlock": "172.31.0.0/16",
+              "DhcpOptionsId": "dopt-0007230dfc865ca89"
+            }
+          ]
+        },
+        "security_groups": {
+          "count": 1,
+          "resources": [
+            {
+              "GroupId": "sg-05f152221b65e3219",
+              "GroupName": "default"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    }
+  },
+  "global_resources": {
+    "iam_roles": {
+      "count": 62,
+      "preserve": true,
+      "resources": [
+        {
+          "RoleName": "aws-config-role",
+          "Arn": "arn:aws:iam::490224159991:role/aws-config-role"
+        },
+        {
+          "RoleName": "aws-config-service-role",
+          "Arn": "arn:aws:iam::490224159991:role/aws-config-service-role"
+        },
+        {
+          "RoleName": "AWSBackupDefaultServiceRole",
+          "Arn": "arn:aws:iam::490224159991:role/AWSBackupDefaultServiceRole"
+        },
+        {
+          "RoleName": "AWSControlTowerAdmin",
+          "Arn": "arn:aws:iam::490224159991:role/service-role/AWSControlTowerAdmin"
+        },
+        {
+          "RoleName": "AWSControlTowerCloudTrailRole",
+          "Arn": "arn:aws:iam::490224159991:role/service-role/AWSControlTowerCloudTrailRole"
+        },
+        {
+          "RoleName": "AWSControlTowerConfigAggregatorRoleForOrganizations",
+          "Arn": "arn:aws:iam::490224159991:role/service-role/AWSControlTowerConfigAggregatorRoleForOrganizations"
+        },
+        {
+          "RoleName": "AWSControlTowerStackSetRole",
+          "Arn": "arn:aws:iam::490224159991:role/service-role/AWSControlTowerStackSetRole"
+        },
+        {
+          "RoleName": "AWSReservedSSO_AdministratorAccess_fa4447048cc2bf57",
+          "Arn": "arn:aws:iam::490224159991:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_AdministratorAccess_fa4447048cc2bf57"
+        },
+        {
+          "RoleName": "AWSReservedSSO_AWSAdministratorAccess_721782b945f8b3d4",
+          "Arn": "arn:aws:iam::490224159991:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_AWSAdministratorAccess_721782b945f8b3d4"
+        },
+        {
+          "RoleName": "AWSReservedSSO_AWSPowerUserAccess_a05ea0839cc3db4c",
+          "Arn": "arn:aws:iam::490224159991:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_AWSPowerUserAccess_a05ea0839cc3db4c"
+        },
+        {
+          "RoleName": "AWSReservedSSO_AWSReadOnlyAccess_24d8e9f116ebb5b4",
+          "Arn": "arn:aws:iam::490224159991:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_AWSReadOnlyAccess_24d8e9f116ebb5b4"
+        },
+        {
+          "RoleName": "AWSReservedSSO_AWSServiceCatalogAdminFullAccess_b15c79fcaf0037c0",
+          "Arn": "arn:aws:iam::490224159991:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_AWSServiceCatalogAdminFullAccess_b15c79fcaf0037c0"
+        },
+        {
+          "RoleName": "AWSReservedSSO_AWSServiceCatalogEndUserAccess_db43a490e7f12f3e",
+          "Arn": "arn:aws:iam::490224159991:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_AWSServiceCatalogEndUserAccess_db43a490e7f12f3e"
+        },
+        {
+          "RoleName": "AWSReservedSSO_Billing_02be1c47425d8d25",
+          "Arn": "arn:aws:iam::490224159991:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_Billing_02be1c47425d8d25"
+        },
+        {
+          "RoleName": "AWSServiceRoleForAccessAnalyzer",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/access-analyzer.amazonaws.com/AWSServiceRoleForAccessAnalyzer"
+        },
+        {
+          "RoleName": "AWSServiceRoleForAmazonEventBridgeApiDestinations",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/apidestinations.events.amazonaws.com/AWSServiceRoleForAmazonEventBridgeApiDestinations"
+        },
+        {
+          "RoleName": "AWSServiceRoleForAmazonGuardDuty",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty"
+        },
+        {
+          "RoleName": "AWSServiceRoleForAmazonGuardDutyMalwareProtection",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/malware-protection.guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDutyMalwareProtection"
+        },
+        {
+          "RoleName": "AWSServiceRoleForAmazonInspector2",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/inspector2.amazonaws.com/AWSServiceRoleForAmazonInspector2"
+        },
+        {
+          "RoleName": "AWSServiceRoleForAmazonInspector2Agentless",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/agentless.inspector2.amazonaws.com/AWSServiceRoleForAmazonInspector2Agentless"
+        },
+        {
+          "RoleName": "AWSServiceRoleForAmazonMacie",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/macie.amazonaws.com/AWSServiceRoleForAmazonMacie"
+        },
+        {
+          "RoleName": "AWSServiceRoleForAPIGateway",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/ops.apigateway.amazonaws.com/AWSServiceRoleForAPIGateway"
+        },
+        {
+          "RoleName": "AWSServiceRoleForApplicationAutoScaling_ECSService",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/ecs.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_ECSService"
+        },
+        {
+          "RoleName": "AWSServiceRoleForBackup",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/backup.amazonaws.com/AWSServiceRoleForBackup"
+        },
+        {
+          "RoleName": "AWSServiceRoleForCloudFormationStackSetsOrgAdmin",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/stacksets.cloudformation.amazonaws.com/AWSServiceRoleForCloudFormationStackSetsOrgAdmin"
+        },
+        {
+          "RoleName": "AWSServiceRoleForCloudFrontLogger",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/logger.cloudfront.amazonaws.com/AWSServiceRoleForCloudFrontLogger"
+        },
+        {
+          "RoleName": "AWSServiceRoleForCloudTrail",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/cloudtrail.amazonaws.com/AWSServiceRoleForCloudTrail"
+        },
+        {
+          "RoleName": "AWSServiceRoleForConfig",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig"
+        },
+        {
+          "RoleName": "AWSServiceRoleForConfigMultiAccountSetup",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/config-multiaccountsetup.amazonaws.com/AWSServiceRoleForConfigMultiAccountSetup"
+        },
+        {
+          "RoleName": "AWSServiceRoleForCostOptimizationHub",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/cost-optimization-hub.bcm.amazonaws.com/AWSServiceRoleForCostOptimizationHub"
+        },
+        {
+          "RoleName": "AWSServiceRoleForECS",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS"
+        },
+        {
+          "RoleName": "AWSServiceRoleForElasticLoadBalancing",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/elasticloadbalancing.amazonaws.com/AWSServiceRoleForElasticLoadBalancing"
+        },
+        {
+          "RoleName": "AWSServiceRoleForOrganizations",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations"
+        },
+        {
+          "RoleName": "AWSServiceRoleForResourceAccessManager",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/ram.amazonaws.com/AWSServiceRoleForResourceAccessManager"
+        },
+        {
+          "RoleName": "AWSServiceRoleForResourceExplorer",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        },
+        {
+          "RoleName": "AWSServiceRoleForSecurityHub",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/securityhub.amazonaws.com/AWSServiceRoleForSecurityHub"
+        },
+        {
+          "RoleName": "AWSServiceRoleForSecurityHubV2",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/securityhubv2.amazonaws.com/AWSServiceRoleForSecurityHubV2"
+        },
+        {
+          "RoleName": "AWSServiceRoleForSSO",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO"
+        },
+        {
+          "RoleName": "AWSServiceRoleForSupport",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport"
+        },
+        {
+          "RoleName": "AWSServiceRoleForTrustedAdvisor",
+          "Arn": "arn:aws:iam::490224159991:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor"
+        },
+        {
+          "RoleName": "AWSSupportRole",
+          "Arn": "arn:aws:iam::490224159991:role/AWSSupportRole"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-cfn-exec-role-490224159991-us-east-2",
+          "Arn": "arn:aws:iam::490224159991:role/cdk-hnb659fds-cfn-exec-role-490224159991-us-east-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-cfn-exec-role-490224159991-us-west-2",
+          "Arn": "arn:aws:iam::490224159991:role/cdk-hnb659fds-cfn-exec-role-490224159991-us-west-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-deploy-role-490224159991-us-east-2",
+          "Arn": "arn:aws:iam::490224159991:role/cdk-hnb659fds-deploy-role-490224159991-us-east-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-deploy-role-490224159991-us-west-2",
+          "Arn": "arn:aws:iam::490224159991:role/cdk-hnb659fds-deploy-role-490224159991-us-west-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-file-publishing-role-490224159991-us-east-2",
+          "Arn": "arn:aws:iam::490224159991:role/cdk-hnb659fds-file-publishing-role-490224159991-us-east-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-file-publishing-role-490224159991-us-west-2",
+          "Arn": "arn:aws:iam::490224159991:role/cdk-hnb659fds-file-publishing-role-490224159991-us-west-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-image-publishing-role-490224159991-us-east-2",
+          "Arn": "arn:aws:iam::490224159991:role/cdk-hnb659fds-image-publishing-role-490224159991-us-east-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-image-publishing-role-490224159991-us-west-2",
+          "Arn": "arn:aws:iam::490224159991:role/cdk-hnb659fds-image-publishing-role-490224159991-us-west-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-lookup-role-490224159991-us-east-2",
+          "Arn": "arn:aws:iam::490224159991:role/cdk-hnb659fds-lookup-role-490224159991-us-east-2"
+        },
+        {
+          "RoleName": "cdk-hnb659fds-lookup-role-490224159991-us-west-2",
+          "Arn": "arn:aws:iam::490224159991:role/cdk-hnb659fds-lookup-role-490224159991-us-west-2"
+        },
+        {
+          "RoleName": "CognitoSyncLambdaRole",
+          "Arn": "arn:aws:iam::490224159991:role/CognitoSyncLambdaRole"
+        },
+        {
+          "RoleName": "ecsTaskExecutionRole",
+          "Arn": "arn:aws:iam::490224159991:role/ecsTaskExecutionRole"
+        },
+        {
+          "RoleName": "flowlogsRole",
+          "Arn": "arn:aws:iam::490224159991:role/flowlogsRole"
+        },
+        {
+          "RoleName": "github-actions-deploy-aws-prod-poc",
+          "Arn": "arn:aws:iam::490224159991:role/github-actions-deploy-aws-prod-poc"
+        },
+        {
+          "RoleName": "github-actions-rollback-aws-prod-poc",
+          "Arn": "arn:aws:iam::490224159991:role/github-actions-rollback-aws-prod-poc"
+        },
+        {
+          "RoleName": "poc-api-execution-role",
+          "Arn": "arn:aws:iam::490224159991:role/poc-api-execution-role"
+        },
+        {
+          "RoleName": "poc-api-task-role",
+          "Arn": "arn:aws:iam::490224159991:role/poc-api-task-role"
+        },
+        {
+          "RoleName": "poc-lambda-role",
+          "Arn": "arn:aws:iam::490224159991:role/poc-lambda-role"
+        },
+        {
+          "RoleName": "poc-task-execution-role",
+          "Arn": "arn:aws:iam::490224159991:role/poc-task-execution-role"
+        },
+        {
+          "RoleName": "poc-task-role",
+          "Arn": "arn:aws:iam::490224159991:role/poc-task-role"
+        },
+        {
+          "RoleName": "VPCFlowLogsRole",
+          "Arn": "arn:aws:iam::490224159991:role/VPCFlowLogsRole"
+        }
+      ]
+    },
+    "iam_users": {
+      "count": 1,
+      "preserve": true,
+      "resources": [
+        {
+          "UserName": "test-password-policy-user-1751895219",
+          "Arn": "arn:aws:iam::490224159991:user/test-password-policy-user-1751895219"
+        }
+      ]
+    },
+    "iam_policies": {
+      "count": 12,
+      "preserve": true,
+      "resources": [
+        {
+          "PolicyName": "AWSControlTowerStackSetRolePolicy",
+          "Arn": "arn:aws:iam::490224159991:policy/service-role/AWSControlTowerStackSetRolePolicy"
+        },
+        {
+          "PolicyName": "poc-lambda-execution-policy",
+          "Arn": "arn:aws:iam::490224159991:policy/poc-lambda-execution-policy"
+        },
+        {
+          "PolicyName": "GitHubActions-CICD-Policy",
+          "Arn": "arn:aws:iam::490224159991:policy/GitHubActions-CICD-Policy"
+        },
+        {
+          "PolicyName": "GitHubActionsIAMAccess-490224159991",
+          "Arn": "arn:aws:iam::490224159991:policy/GitHubActionsIAMAccess-490224159991"
+        },
+        {
+          "PolicyName": "SecurityAuditor-SOC2",
+          "Arn": "arn:aws:iam::490224159991:policy/SecurityAuditor-SOC2"
+        },
+        {
+          "PolicyName": "AWSControlTowerCloudTrailRolePolicy",
+          "Arn": "arn:aws:iam::490224159991:policy/service-role/AWSControlTowerCloudTrailRolePolicy"
+        },
+        {
+          "PolicyName": "IncidentResponder-SOC2",
+          "Arn": "arn:aws:iam::490224159991:policy/IncidentResponder-SOC2"
+        },
+        {
+          "PolicyName": "GitHubActions-CICD-Policy-SOC2",
+          "Arn": "arn:aws:iam::490224159991:policy/GitHubActions-CICD-Policy-SOC2"
+        },
+        {
+          "PolicyName": "AWSControlTowerAdminPolicy",
+          "Arn": "arn:aws:iam::490224159991:policy/service-role/AWSControlTowerAdminPolicy"
+        },
+        {
+          "PolicyName": "Developer-ReadOnly-SOC2",
+          "Arn": "arn:aws:iam::490224159991:policy/Developer-ReadOnly-SOC2"
+        },
+        {
+          "PolicyName": "github-actions-deploy-aws-prod-poc-custom",
+          "Arn": "arn:aws:iam::490224159991:policy/github-actions-deploy-aws-prod-poc-custom"
+        },
+        {
+          "PolicyName": "github-actions-rollback-aws-prod-poc",
+          "Arn": "arn:aws:iam::490224159991:policy/github-actions-rollback-aws-prod-poc"
+        }
+      ]
+    },
+    "route53_zones": {
+      "count": 1,
+      "preserve_count": 1,
+      "resources": [
+        {
+          "Id": "/hostedzone/Z0991035177JO3J3GU8QZ",
+          "Name": "modulairhr.com.",
+          "CallerReference": "1750630720",
+          "Config": {
+            "PrivateZone": false
+          },
+          "ResourceRecordSetCount": 10
+        }
+      ],
+      "to_preserve": [
+        {
+          "Id": "/hostedzone/Z0991035177JO3J3GU8QZ",
+          "Name": "modulairhr.com.",
+          "CallerReference": "1750630720",
+          "Config": {
+            "PrivateZone": false
+          },
+          "ResourceRecordSetCount": 10
+        }
+      ]
+    },
+    "route53_domains": {
+      "count": 1,
+      "preserve": true,
+      "resources": [
+        {
+          "DomainName": "modulairhr.com",
+          "AutoRenew": true,
+          "TransferLock": true,
+          "Expiry": "2027-03-28 20:47:46-05:00"
+        }
+      ]
+    },
+    "organization_accounts": {
+      "count": 9,
+      "preserve": true,
+      "resources": [
+        {
+          "Id": "009595167441",
+          "Arn": "arn:aws:organizations::490224159991:account/o-q76nrp6opp/009595167441",
+          "Email": "ben+aws+modulairhr+network@benclennon.com",
+          "Name": "ModulairHR-Network",
+          "Status": "ACTIVE",
+          "JoinedMethod": "CREATED",
+          "JoinedTimestamp": "2025-06-29 12:36:28.032000-05:00"
+        },
+        {
+          "Id": "085608568402",
+          "Arn": "arn:aws:organizations::490224159991:account/o-q76nrp6opp/085608568402",
+          "Email": "ben+aws+modulairhr+sharedservices@benclennon.com",
+          "Name": "ModulairHR-SharedServices",
+          "Status": "ACTIVE",
+          "JoinedMethod": "CREATED",
+          "JoinedTimestamp": "2025-06-29 12:36:35.147000-05:00"
+        },
+        {
+          "Id": "134388504287",
+          "Arn": "arn:aws:organizations::490224159991:account/o-q76nrp6opp/134388504287",
+          "Email": "ben+aws+modulairhr+dev@benclennon.com",
+          "Name": "ModulairHR-Development",
+          "Status": "ACTIVE",
+          "JoinedMethod": "CREATED",
+          "JoinedTimestamp": "2025-06-29 12:36:42.569000-05:00"
+        },
+        {
+          "Id": "241947254664",
+          "Arn": "arn:aws:organizations::490224159991:account/o-q76nrp6opp/241947254664",
+          "Email": "ben+aws+modulairhr+staging@benclennon.com",
+          "Name": "ModulairHR-Staging",
+          "Status": "ACTIVE",
+          "JoinedMethod": "CREATED",
+          "JoinedTimestamp": "2025-06-29 12:36:49.222000-05:00"
+        },
+        {
+          "Id": "490224159991",
+          "Arn": "arn:aws:organizations::490224159991:account/o-q76nrp6opp/490224159991",
+          "Email": "ben+aws+root@benclennon.com",
+          "Name": "BenAWSRoot",
+          "Status": "ACTIVE",
+          "JoinedMethod": "INVITED",
+          "JoinedTimestamp": "2025-06-17 10:50:22.178000-05:00"
+        },
+        {
+          "Id": "669719022745",
+          "Arn": "arn:aws:organizations::490224159991:account/o-q76nrp6opp/669719022745",
+          "Email": "ben+aws+modulairhr+audit@benclennon.com",
+          "Name": "ModulairHR-Audit",
+          "Status": "ACTIVE",
+          "JoinedMethod": "CREATED",
+          "JoinedTimestamp": "2025-06-29 12:36:20.765000-05:00"
+        },
+        {
+          "Id": "739089951972",
+          "Arn": "arn:aws:organizations::490224159991:account/o-q76nrp6opp/739089951972",
+          "Email": "ben+aws+modulairhr+prod@benclennon.com",
+          "Name": "ModulairHR-Production",
+          "Status": "ACTIVE",
+          "JoinedMethod": "CREATED",
+          "JoinedTimestamp": "2025-06-29 12:36:55.834000-05:00"
+        },
+        {
+          "Id": "744139898690",
+          "Arn": "arn:aws:organizations::490224159991:account/o-q76nrp6opp/744139898690",
+          "Email": "johnbwhitney@gmail.com",
+          "Name": "JWModulairHR",
+          "Status": "ACTIVE",
+          "JoinedMethod": "CREATED",
+          "JoinedTimestamp": "2025-06-26 13:06:30.954000-05:00"
+        },
+        {
+          "Id": "843987575791",
+          "Arn": "arn:aws:organizations::490224159991:account/o-q76nrp6opp/843987575791",
+          "Email": "ben+aws+modulairhr+logarchive@benclennon.com",
+          "Name": "ModulairHR-LogArchive",
+          "Status": "ACTIVE",
+          "JoinedMethod": "CREATED",
+          "JoinedTimestamp": "2025-06-29 12:36:13.187000-05:00"
+        }
+      ]
+    },
+    "organizational_units": {
+      "count": 10,
+      "preserve": true,
+      "resources": [
+        {
+          "Id": "ou-p21d-43unu99e",
+          "Arn": "arn:aws:organizations::490224159991:ou/o-q76nrp6opp/ou-p21d-43unu99e",
+          "Name": "Management"
+        },
+        {
+          "Id": "ou-p21d-74w20b1r",
+          "Arn": "arn:aws:organizations::490224159991:ou/o-q76nrp6opp/ou-p21d-74w20b1r",
+          "Name": "Security"
+        },
+        {
+          "Id": "ou-p21d-ez967htt",
+          "Arn": "arn:aws:organizations::490224159991:ou/o-q76nrp6opp/ou-p21d-ez967htt",
+          "Name": "Security-CT"
+        },
+        {
+          "Id": "ou-p21d-hdfnt4qa",
+          "Arn": "arn:aws:organizations::490224159991:ou/o-q76nrp6opp/ou-p21d-hdfnt4qa",
+          "Name": "Workloads"
+        },
+        {
+          "Id": "ou-p21d-i6vfavqo",
+          "Arn": "arn:aws:organizations::490224159991:ou/o-q76nrp6opp/ou-p21d-i6vfavqo",
+          "Name": "Test"
+        },
+        {
+          "Id": "ou-p21d-zc5gqczk",
+          "Arn": "arn:aws:organizations::490224159991:ou/o-q76nrp6opp/ou-p21d-zc5gqczk",
+          "Name": "Prod"
+        },
+        {
+          "Id": "ou-p21d-zloocwtw",
+          "Arn": "arn:aws:organizations::490224159991:ou/o-q76nrp6opp/ou-p21d-zloocwtw",
+          "Name": "Dev"
+        },
+        {
+          "Id": "ou-p21d-qwygxbns",
+          "Arn": "arn:aws:organizations::490224159991:ou/o-q76nrp6opp/ou-p21d-qwygxbns",
+          "Name": "Infrastructure"
+        },
+        {
+          "Id": "ou-p21d-rlrglwff",
+          "Arn": "arn:aws:organizations::490224159991:ou/o-q76nrp6opp/ou-p21d-rlrglwff",
+          "Name": "Sandbox"
+        },
+        {
+          "Id": "ou-p21d-zog1jd5m",
+          "Arn": "arn:aws:organizations::490224159991:ou/o-q76nrp6opp/ou-p21d-zog1jd5m",
+          "Name": "Unclassified"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_resources": 154,
+    "resources_to_preserve": 98,
+    "resources_to_delete": 56,
+    "by_service": {},
+    "by_region": {
+      "us-east-2": {
+        "total": 9,
+        "to_preserve": 2,
+        "to_delete": 7
+      },
+      "us-west-2": {
+        "total": 3,
+        "to_preserve": 0,
+        "to_delete": 3
+      },
+      "us-east-1": {
+        "total": 20,
+        "to_preserve": 0,
+        "to_delete": 20
+      },
+      "us-west-1": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      },
+      "eu-west-1": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      },
+      "eu-west-2": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      },
+      "eu-west-3": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      },
+      "eu-central-1": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      },
+      "ap-southeast-1": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      },
+      "ap-southeast-2": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      },
+      "ap-northeast-1": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      },
+      "ca-central-1": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      },
+      "ap-northeast-2": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      },
+      "ap-south-1": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      },
+      "sa-east-1": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      },
+      "eu-north-1": {
+        "total": 2,
+        "to_preserve": 0,
+        "to_delete": 2
+      }
+    }
+  }
+}
