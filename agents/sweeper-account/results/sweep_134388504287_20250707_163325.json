@@ -1,0 +1,229 @@
+{
+  "account_id": "134388504287",
+  "profile_name": "Development-Admin",
+  "start_time": "2025-07-07T16:33:12.302675",
+  "dry_run": true,
+  "deletions": {
+    "successful": [
+      {
+        "type": "lambda_function",
+        "id": "aws-controltower-NotificationForwarder",
+        "region": "us-east-2"
+      },
+      {
+        "type": "lambda_function",
+        "id": "dev-tenant-offboarding",
+        "region": "us-east-2"
+      },
+      {
+        "type": "lambda_function",
+        "id": "dev-tenant-data-export",
+        "region": "us-east-2"
+      },
+      {
+        "type": "lambda_function",
+        "id": "dev-tenant-deletion-checker",
+        "region": "us-east-2"
+      },
+      {
+        "type": "lambda_function",
+        "id": "dev-tenant-email-processor",
+        "region": "us-east-2"
+      },
+      {
+        "type": "lambda_function",
+        "id": "dev-cloudfront-log-monitor",
+        "region": "us-east-2"
+      },
+      {
+        "type": "lambda_function",
+        "id": "dev-tenant-deletion-verifier",
+        "region": "us-east-2"
+      },
+      {
+        "type": "lambda_function",
+        "id": "DefaultSecurityGroupRemediation",
+        "region": "us-east-2"
+      },
+      {
+        "type": "lambda_function",
+        "id": "DefaultSGRemediation-us-east-2",
+        "region": "us-east-2"
+      },
+      {
+        "type": "lambda_function",
+        "id": "SaaSPlatform-MarketingSit-CustomS3AutoDeleteObject-EqCaFR5lP766",
+        "region": "us-east-2"
+      },
+      {
+        "type": "lambda_function",
+        "id": "DefaultSGRemediation-us-west-2",
+        "region": "us-west-2"
+      },
+      {
+        "type": "lambda_function",
+        "id": "aws-controltower-NotificationForwarder",
+        "region": "us-west-2"
+      },
+      {
+        "type": "s3_bucket",
+        "id": "cdk-hnb659fds-assets-134388504287-us-east-2"
+      },
+      {
+        "type": "s3_bucket",
+        "id": "cdk-hnb659fds-assets-134388504287-us-west-2"
+      },
+      {
+        "type": "s3_bucket",
+        "id": "dev-tenant-exports-134388504287"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "StackSet-DefaultSGRemediationSimple-5ad05943-3380-4947-a539-25cbb0af68ae",
+        "region": "us-east-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "SaaSPlatform-MarketingSite-dev",
+        "region": "us-east-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "SaaSPlatform-Foundation-dev",
+        "region": "us-east-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "SaaSPlatform-TenantLifecycle-dev",
+        "region": "us-east-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "GuardDutyStack",
+        "region": "us-east-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "CrossAccountRoles-Development",
+        "region": "us-east-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "CDKToolkit",
+        "region": "us-east-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-3af8ba86-6265-4219-9dc5-2b79d1c5c06e",
+        "region": "us-east-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-ab44439b-ed0b-4678-bbea-93946527e035",
+        "region": "us-east-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "StackSet-AWSControlTowerBP-BASELINE-SERVICE-LINKED-ROLE-143789b4-4670-4104-872a-8c37744b677d",
+        "region": "us-east-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "StackSet-AWSControlTowerBP-BASELINE-SERVICE-ROLES-c58c3465-c1dd-4eb0-b6b7-fedf9b503bc5",
+        "region": "us-east-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "StackSet-AWSControlTowerBP-BASELINE-ROLES-04b986db-d0ac-4c53-b135-ef1f85312f0b",
+        "region": "us-east-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "StackSet-DefaultSGRemediationSimple-3f222b72-1527-486c-bd1d-78ed46e61e26",
+        "region": "us-west-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "CDKToolkit",
+        "region": "us-west-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-dbcdce42-62c4-42a4-91cd-534a2821c244",
+        "region": "us-west-2"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-99dc286c-9c2d-49c0-b095-57f8c2543d42",
+        "region": "us-west-2"
+      }
+    ],
+    "failed": [],
+    "skipped_preserved": [
+      {
+        "type": "s3_bucket",
+        "id": "aws-config-bucket-134388504287",
+        "reason": "Tagged for preservation"
+      },
+      {
+        "type": "s3_bucket",
+        "id": "aws-config-bucket-134388504287-us-east-1",
+        "reason": "Tagged for preservation"
+      },
+      {
+        "type": "s3_bucket",
+        "id": "aws-config-bucket-134388504287-us-east-2",
+        "reason": "Tagged for preservation"
+      },
+      {
+        "type": "s3_bucket",
+        "id": "aws-config-bucket-134388504287-us-west-2",
+        "reason": "Tagged for preservation"
+      },
+      {
+        "type": "s3_bucket",
+        "id": "aws-ssm-inventory-134388504287-us-east-1",
+        "reason": "Tagged for preservation"
+      },
+      {
+        "type": "s3_bucket",
+        "id": "cdk-hnb659fds-assets-134388504287-us-east-1",
+        "reason": "Tagged for preservation"
+      },
+      {
+        "type": "s3_bucket",
+        "id": "dev-tenant-data-134388504287",
+        "reason": "Tagged for preservation"
+      },
+      {
+        "type": "s3_bucket",
+        "id": "modulairhr-cloudfront-logs-dev-134388504287",
+        "reason": "Tagged for preservation"
+      },
+      {
+        "type": "s3_bucket",
+        "id": "modulairhr-lambda-artifacts-134388504287",
+        "reason": "Tagged for preservation"
+      },
+      {
+        "type": "s3_bucket",
+        "id": "modulairhr-marketing-dev-134388504287",
+        "reason": "Tagged for preservation"
+      },
+      {
+        "type": "cloudformation_stack",
+        "id": "StackSet-AWSControlTowerExecutionRole-4fe03ac2-f565-45e7-b381-3f3d937b5f4a",
+        "region": "us-east-2",
+        "reason": "Tagged for preservation"
+      }
+    ],
+    "skipped_dependency": []
+  },
+  "summary": {
+    "total_deleted": 31,
+    "total_failed": 0,
+    "total_preserved": 11,
+    "by_service": {}
+  },
+  "end_time": "2025-07-07T16:33:25.144043"
+}
