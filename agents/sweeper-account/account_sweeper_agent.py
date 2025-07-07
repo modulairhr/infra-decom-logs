@@ -482,6 +482,7 @@ def main():
     parser = argparse.ArgumentParser(description='AWS Account Sweeper Agent')
     parser.add_argument('--live', action='store_true', help='Run in LIVE mode (actually delete resources)')
     parser.add_argument('--profile', type=str, help='Specific AWS profile to sweep')
+    parser.add_argument('--force', action='store_true', help='Skip confirmation prompt (use with caution!)')
     args = parser.parse_args()
     
     dry_run = not args.live
@@ -490,11 +491,13 @@ def main():
     print(f"Mode: {'LIVE - RESOURCES WILL BE DELETED' if not dry_run else 'DRY RUN - No deletions'}")
     print(f"Started at: {datetime.utcnow().isoformat()}")
     
-    if not dry_run:
+    if not dry_run and not args.force:
         response = input("\n⚠️  WARNING: Live mode will DELETE resources! Type 'DELETE' to confirm: ")
         if response != 'DELETE':
             print("Confirmation not received. Exiting.")
             sys.exit(1)
+    elif not dry_run and args.force:
+        print("\n⚠️  WARNING: Live mode with --force flag. Resources WILL BE DELETED!")
     
     # Load consolidated inventory
     inventory_dir = "/Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/inventory/results"

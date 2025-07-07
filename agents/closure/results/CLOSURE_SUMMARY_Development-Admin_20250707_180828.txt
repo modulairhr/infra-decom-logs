@@ -1,0 +1,17 @@
+AWS ACCOUNT CLOSURE SUMMARY
+==========================
+
+Account Profile: Development-Admin
+Closure Date: 2025-07-07 18:08:28 UTC
+Status: PARTIAL
+
+DESTRUCTION SUMMARY:
+- Total Resources Destroyed: 0
+- Total Failures: 0
+
+PHASE RESULTS:
+- Storage: FAILED
+- Compute: FAILED
+- Infrastructure: FAILED
+
+Full details in: /Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/closure/results/account_closure_Development-Admin_20250707_180828.json

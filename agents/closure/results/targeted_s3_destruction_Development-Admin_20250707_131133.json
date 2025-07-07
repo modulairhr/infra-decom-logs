@@ -1,0 +1,54 @@
+{
+  "timestamp": "2025-07-07T13:11:30.192814",
+  "profile": "Development-Admin",
+  "buckets_processed": [
+    {
+      "bucket_name": "aws-config-bucket-134388504287",
+      "status": "failed",
+      "error_type": "other_error",
+      "error_message": "An error occurred (403) when calling the HeadBucket operation: Forbidden",
+      "configurations_removed": [],
+      "steps_completed": []
+    },
+    {
+      "bucket_name": "aws-config-bucket-134388504287-us-east-1",
+      "status": "failed",
+      "error_type": "other_error",
+      "error_message": "An error occurred (403) when calling the HeadBucket operation: Forbidden",
+      "configurations_removed": [],
+      "steps_completed": []
+    },
+    {
+      "bucket_name": "cdk-hnb659fds-assets-134388504287-us-east-1",
+      "status": "failed",
+      "error_type": "other_error",
+      "error_message": "An error occurred (403) when calling the HeadBucket operation: Forbidden",
+      "configurations_removed": [],
+      "steps_completed": []
+    },
+    {
+      "bucket_name": "modulairhr-cloudfront-logs-dev-134388504287",
+      "status": "failed",
+      "error_type": "other_error",
+      "error_message": "An error occurred (403) when calling the HeadBucket operation: Forbidden",
+      "configurations_removed": [],
+      "steps_completed": []
+    },
+    {
+      "bucket_name": "modulairhr-lambda-artifacts-134388504287",
+      "status": "failed",
+      "error_type": "other_error",
+      "error_message": "An error occurred (403) when calling the HeadBucket operation: Forbidden",
+      "configurations_removed": [],
+      "steps_completed": []
+    }
+  ],
+  "summary": {
+    "total_attempted": 5,
+    "successful_deletions": 0,
+    "failed_deletions": 5,
+    "access_denied_errors": 0,
+    "policy_restricted_errors": 0,
+    "other_errors": 5
+  }
+}

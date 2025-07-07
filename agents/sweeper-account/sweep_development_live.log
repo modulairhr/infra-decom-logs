@@ -1,0 +1,4 @@
+/Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/sweeper-account/account_sweeper_agent.py:492: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  print(f"Started at: {datetime.utcnow().isoformat()}")
+/Users/bc/Desktop/@modulairhr_aws/infra-decom-logs/agents/sweeper-account/account_sweeper_agent.py:33: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'start_time': datetime.utcnow().isoformat(),
