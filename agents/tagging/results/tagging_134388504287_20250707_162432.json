@@ -1,0 +1,26 @@
+{
+  "account_id": "134388504287",
+  "profile_name": "Development-Admin",
+  "start_time": "2025-07-07T16:24:17.062550",
+  "resources_tagged": 65,
+  "resources_failed": 15,
+  "by_service": {},
+  "errors": [
+    "Failed to tag role AWSReservedSSO_AdministratorAccess_f4494ddbdde01832: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_AdministratorAccess_f4494ddbdde01832' - this role is only modifiable by AWS",
+    "Failed to tag role AWSReservedSSO_AWSAdministratorAccess_a6e2581bd1f0e7a5: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_AWSAdministratorAccess_a6e2581bd1f0e7a5' - this role is only modifiable by AWS",
+    "Failed to tag role AWSReservedSSO_AWSOrganizationsFullAccess_8813e627693e6a80: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_AWSOrganizationsFullAccess_8813e627693e6a80' - this role is only modifiable by AWS",
+    "Failed to tag role AWSReservedSSO_AWSPowerUserAccess_578eca9c0d77d043: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_AWSPowerUserAccess_578eca9c0d77d043' - this role is only modifiable by AWS",
+    "Failed to tag role AWSReservedSSO_AWSReadOnlyAccess_3629cbd89d7c1c64: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_AWSReadOnlyAccess_3629cbd89d7c1c64' - this role is only modifiable by AWS",
+    "Failed to tag role AWSReservedSSO_DeveloperAccess_2ee54ea1f3c108d1: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_DeveloperAccess_2ee54ea1f3c108d1' - this role is only modifiable by AWS",
+    "Failed to tag bucket modulairhr-cloudfront-logs-dev-134388504287: An error occurred (AccessDenied) when calling the PutBucketTagging operation: User: arn:aws:sts::134388504287:assumed-role/AWSReservedSSO_AdministratorAccess_f4494ddbdde01832/admin is not authorized to perform: s3:PutBucketTagging on resource: \"arn:aws:s3:::modulairhr-cloudfront-logs-dev-134388504287\" with an explicit deny in a service control policy",
+    "Failed to tag bucket modulairhr-lambda-artifacts-134388504287: An error occurred (AccessDenied) when calling the PutBucketTagging operation: User: arn:aws:sts::134388504287:assumed-role/AWSReservedSSO_AdministratorAccess_f4494ddbdde01832/admin is not authorized to perform: s3:PutBucketTagging on resource: \"arn:aws:s3:::modulairhr-lambda-artifacts-134388504287\" with an explicit deny in a service control policy",
+    "Failed to tag stack StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-3af8ba86-6265-4219-9dc5-2b79d1c5c06e: An error occurred (ValidationError) when calling the UpdateStack operation: Parameters: [SecurityTopicName, ManagedResourcePrefix, SecurityAccountId] must have values",
+    "Failed to tag stack StackSet-AWSControlTowerBP-BASELINE-CONFIG-ab44439b-ed0b-4678-bbea-93946527e035: An error occurred (ValidationError) when calling the UpdateStack operation: Parameters: [ResourceTypes, KMSKeyArn, HomeRegionName, SecurityAccountId, ManagedResourcePrefix, IsHomeRegionInitialControlTowerRegion, AWSLogsS3KeyPrefix] must have values",
+    "Failed to tag stack StackSet-AWSControlTowerBP-BASELINE-SERVICE-LINKED-ROLE-143789b4-4670-4104-872a-8c37744b677d: An error occurred (ValidationError) when calling the UpdateStack operation: Parameters: [ServicePrincipal] must have values",
+    "Failed to tag stack StackSet-AWSControlTowerBP-BASELINE-SERVICE-ROLES-c58c3465-c1dd-4eb0-b6b7-fedf9b503bc5: An error occurred (ValidationError) when calling the UpdateStack operation: Parameters: [SecurityTopicName, ManagedResourcePrefix, SecurityAccountId] must have values",
+    "Failed to tag stack StackSet-AWSControlTowerBP-BASELINE-ROLES-04b986db-d0ac-4c53-b135-ef1f85312f0b: An error occurred (ValidationError) when calling the UpdateStack operation: Parameters: [ManagedResourcePrefix, SecurityAccountReadOnlyRoleArn, SecurityAccountAdminRoleArn] must have values",
+    "Failed to tag stack StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-dbcdce42-62c4-42a4-91cd-534a2821c244: An error occurred (ValidationError) when calling the UpdateStack operation: Parameters: [SecurityTopicName, ManagedResourcePrefix, SecurityAccountId] must have values",
+    "Failed to tag stack StackSet-AWSControlTowerBP-BASELINE-CONFIG-99dc286c-9c2d-49c0-b095-57f8c2543d42: An error occurred (ValidationError) when calling the UpdateStack operation: Parameters: [ResourceTypes, KMSKeyArn, HomeRegionName, SecurityAccountId, ManagedResourcePrefix, IsHomeRegionInitialControlTowerRegion, AWSLogsS3KeyPrefix] must have values"
+  ],
+  "end_time": "2025-07-07T16:24:32.061922"
+}

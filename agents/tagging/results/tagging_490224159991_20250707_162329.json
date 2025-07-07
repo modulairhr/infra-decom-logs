@@ -1,0 +1,20 @@
+{
+  "account_id": "490224159991",
+  "profile_name": "Management-Admin",
+  "start_time": "2025-07-07T16:23:18.953685",
+  "resources_tagged": 68,
+  "resources_failed": 9,
+  "by_service": {},
+  "errors": [
+    "Failed to tag role AWSReservedSSO_AdministratorAccess_fa4447048cc2bf57: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_AdministratorAccess_fa4447048cc2bf57' - this role is only modifiable by AWS",
+    "Failed to tag role AWSReservedSSO_AWSAdministratorAccess_721782b945f8b3d4: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_AWSAdministratorAccess_721782b945f8b3d4' - this role is only modifiable by AWS",
+    "Failed to tag role AWSReservedSSO_AWSPowerUserAccess_a05ea0839cc3db4c: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_AWSPowerUserAccess_a05ea0839cc3db4c' - this role is only modifiable by AWS",
+    "Failed to tag role AWSReservedSSO_AWSReadOnlyAccess_24d8e9f116ebb5b4: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_AWSReadOnlyAccess_24d8e9f116ebb5b4' - this role is only modifiable by AWS",
+    "Failed to tag role AWSReservedSSO_AWSServiceCatalogAdminFullAccess_b15c79fcaf0037c0: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_AWSServiceCatalogAdminFullAccess_b15c79fcaf0037c0' - this role is only modifiable by AWS",
+    "Failed to tag role AWSReservedSSO_AWSServiceCatalogEndUserAccess_db43a490e7f12f3e: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_AWSServiceCatalogEndUserAccess_db43a490e7f12f3e' - this role is only modifiable by AWS",
+    "Failed to tag role AWSReservedSSO_Billing_02be1c47425d8d25: An error occurred (UnmodifiableEntity) when calling the TagRole operation: Cannot perform the operation on the protected role 'AWSReservedSSO_Billing_02be1c47425d8d25' - this role is only modifiable by AWS",
+    "Failed to tag stack AWSControlTowerBP-BASELINE-CONFIG-MASTER: An error occurred (ValidationError) when calling the UpdateStack operation: Parameters: [ManagedResourcePrefix, ManagedResourceTagValue, ManagedResourceTagKey] must have values",
+    "Failed to tag stack AWSControlTowerBP-BASELINE-CLOUDTRAIL-MASTER: An error occurred (ValidationError) when calling the UpdateStack operation: Parameters: [KMSKeyArn, SecurityAccountId, ManagedResourcePrefix, AWSLogsS3KeyPrefix] must have values"
+  ],
+  "end_time": "2025-07-07T16:23:29.542850"
+}

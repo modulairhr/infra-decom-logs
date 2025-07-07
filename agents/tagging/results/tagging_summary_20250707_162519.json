@@ -1,0 +1,62 @@
+{
+  "execution_time": "2025-07-07T16:25:19.339145",
+  "accounts_processed": 9,
+  "total_tagged": 447,
+  "total_failed": 127,
+  "by_account": {
+    "Management-Admin": {
+      "status": "success",
+      "tagged": 68,
+      "failed": 9,
+      "errors": 9
+    },
+    "LogArchive-Admin": {
+      "status": "success",
+      "tagged": 42,
+      "failed": 14,
+      "errors": 14
+    },
+    "Audit-Admin": {
+      "status": "success",
+      "tagged": 43,
+      "failed": 16,
+      "errors": 16
+    },
+    "Network-Admin": {
+      "status": "success",
+      "tagged": 40,
+      "failed": 14,
+      "errors": 14
+    },
+    "SharedServices-Admin": {
+      "status": "success",
+      "tagged": 41,
+      "failed": 14,
+      "errors": 14
+    },
+    "Development-Admin": {
+      "status": "success",
+      "tagged": 65,
+      "failed": 15,
+      "errors": 15
+    },
+    "Staging-Admin": {
+      "status": "success",
+      "tagged": 57,
+      "failed": 16,
+      "errors": 16
+    },
+    "Production-Admin": {
+      "status": "success",
+      "tagged": 52,
+      "failed": 17,
+      "errors": 17
+    },
+    "JWModulairHR-Admin": {
+      "status": "success",
+      "tagged": 39,
+      "failed": 12,
+      "errors": 12
+    }
+  }
+}

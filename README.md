@@ -19,6 +19,7 @@ Decommission the AWS environment to the bare minimum while preserving critical i
 | Agent | Status | Last Updated | Notes |
 |-------|--------|--------------|-------|
 | Inventory | ✅ Complete | 2025-07-07 16:19 | Found 809 resources (581 to preserve, 228 to delete) |
+| Tagging | ✅ Complete | 2025-07-07 16:25 | Tagged 447 resources for preservation |
 | Sweeper-Account | 🟡 Starting | 2025-07-07 | Ready to begin cleanup |
 | Sweeper-Region | ⏸️ Pending | - | Waiting for account cleanup |
 | Auditor | ⏸️ Pending | - | Waiting for initial cleanup |
@@ -26,7 +27,7 @@ Decommission the AWS environment to the bare minimum while preserving critical i
 ## Progress Tracking
 - [x] GitHub repository created
 - [x] Resource inventory completed (809 resources found)
-- [ ] Resources tagged for preservation
+- [x] Resources tagged for preservation (447 resources tagged)
 - [ ] Non-essential resources removed
 - [ ] Regions us-west-2 and us-east-1 disabled
 - [ ] Final audit completed
